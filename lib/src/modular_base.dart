@@ -369,9 +369,9 @@ class Modular {
     actualRoute = path;
     _args = ModularArguments(router.params, settings.arguments);
 
-    if (settings.isInitialRoute) {
+    /*if (settings.isInitialRoute) {
       router = router.copyWith(transition: TransitionType.noTransition);
-    }
+    }*/
 
     return router.getPageRoute(settings: settings, injectMap: _injectMap);
   }
